@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_begin/FormKullanimi.dart';
 import 'package:flutter_begin/AppBarKullanimi.dart';
+import 'package:flutter_begin/appBarArama.dart';
 import 'package:flutter_begin/popup.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: AppBarKullanimi(),
+      home: const appBarArama(),
     );
   }
 }
@@ -46,7 +47,6 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              child: const Text("Basit Alert"),
               onPressed: (() {
                 showDialog(
                     context: context,
@@ -72,9 +72,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       );
                     });
               }),
+              child: const Text("Basit Alert"),
             ),
             ElevatedButton(
-              child: Text("Özel Alert"),
               onPressed: (() {
                 showDialog(
                     context: context,
@@ -123,6 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       );
                     });
               }),
+              child: const Text("Özel Alert"),
             )
           ],
         ),
