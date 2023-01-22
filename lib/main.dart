@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/Forms.dart';
+import 'package:flutter_begin/FormKullanimi.dart';
+import 'package:flutter_begin/AppBarKullanimi.dart';
 import 'package:flutter_begin/popup.dart';
 
 void main() {
@@ -15,9 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.red,
       ),
-      home: formKullanimi(),
+      home: AppBarKullanimi(),
     );
   }
 }
