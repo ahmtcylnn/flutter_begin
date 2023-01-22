@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/FormKullanimi.dart';
-import 'package:flutter_begin/AppBarKullanimi.dart';
-import 'package:flutter_begin/appBarArama.dart';
-import 'package:flutter_begin/popup.dart';
+import 'package:flutter_begin/cardKullanimi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const appBarArama(),
+      home: const cardKullanimi(),
     );
   }
 }
