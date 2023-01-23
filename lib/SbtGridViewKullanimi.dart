@@ -25,10 +25,9 @@ class _SbtGridViewKullanimiState extends State<SbtGridViewKullanimi> {
             child: Card(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                // ignore: prefer_const_literals_to_create_immutables
-                children: [
-                  const Icon(Icons.wb_sunny),
-                  const Text("Güneş"),
+                children: const [
+                  Icon(Icons.wb_sunny),
+                  Text("Güneş"),
                 ],
               ),
             ),
@@ -36,20 +35,18 @@ class _SbtGridViewKullanimiState extends State<SbtGridViewKullanimi> {
           Card(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              // ignore: prefer_const_literals_to_create_immutables
-              children: [
-                const Icon(Icons.brightness_2),
-                const Text("Ay"),
+              children: const [
+                Icon(Icons.brightness_2),
+                Text("Ay"),
               ],
             ),
           ),
           Card(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              // ignore: prefer_const_literals_to_create_immutables
-              children: [
-                const Icon(Icons.star),
-                const Text("Yıldız"),
+              children: const [
+                Icon(Icons.star),
+                Text("Yıldız"),
               ],
             ),
           ),
