@@ -56,16 +56,30 @@ class _DinamicListViewState extends State<DinamicListView> {
                             },
                             child: Text(ulkeler[indeks])),
                         const Spacer(),
-                        TextButton(
-                          // ignore: sort_child_properties_last
-                          child: const Text(
-                            "Ülke Seç",
-                            style: TextStyle(color: Colors.red),
-                          ),
-
-                          onPressed: (() {
-                            print("Buton ile ${ulkeler[indeks]} seçildi.");
-                          }),
+                        PopupMenuButton(
+                          child: const Icon(Icons.more_vert),
+                          itemBuilder: (context) => [
+                            const PopupMenuItem(
+                                value: 1,
+                                child: Text(
+                                  "Sil",
+                                  style: TextStyle(color: Colors.red),
+                                )),
+                            const PopupMenuItem(
+                                value: 2,
+                                child: Text(
+                                  "Güncelle",
+                                  style: TextStyle(color: Colors.blue),
+                                )),
+                          ],
+                          onSelected: (menuItemValue) {
+                            if (menuItemValue == 1) {
+                              print("${ulkeler[indeks]} silindi.");
+                            }
+                            if (menuItemValue == 2) {
+                              print("${ulkeler[indeks]} güncellendi.");
+                            }
+                          },
                         ),
                       ],
                     ),
