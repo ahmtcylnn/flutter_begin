@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/DinamicListView.dart';
+import 'package:flutter_begin/YatayListViewScroll.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const DinamicListView(),
+      home: const YatayListViewScroll(),
     );
   }
 }
