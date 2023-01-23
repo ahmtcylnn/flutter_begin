@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_begin/DetailsPage.dart';
 
 class DinamicListView extends StatefulWidget {
   const DinamicListView({super.key});
@@ -32,7 +33,13 @@ class _DinamicListViewState extends State<DinamicListView> {
           itemBuilder: (context, indeks) {
             return GestureDetector(
               onTap: () {
-                print("${ulkeler[indeks]} seçildi.");
+                //print("${ulkeler[indeks]} seçildi.");
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: ((context) => DetailsPage(
+                              ulkeAdi: ulkeler[indeks],
+                            ))));
               },
               child: Card(
                 shadowColor: Colors.grey,
