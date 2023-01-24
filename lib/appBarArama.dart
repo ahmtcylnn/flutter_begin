@@ -1,5 +1,7 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class appBarArama extends StatefulWidget {
   const appBarArama({super.key});
 
@@ -7,6 +9,7 @@ class appBarArama extends StatefulWidget {
   State<appBarArama> createState() => _appBarAramaState();
 }
 
+// ignore: camel_case_types
 class _appBarAramaState extends State<appBarArama> {
   bool aramaYapiliyorMu = false;
 

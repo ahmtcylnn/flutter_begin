@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/DinamicGridViewOnTap.dart';
-import 'package:flutter_begin/FutureBuilderList.dart';
+import 'package:flutter_begin/DetayliListView/main1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const FutureBuilderList(),
+      home: const main1(),
     );
   }
 }
