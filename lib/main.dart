@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/DinamicGridView.dart';
+import 'package:flutter_begin/DinamicGridViewOnTap.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: DinamicGridView(),
+      home: DinamicGridViewOnTap(),
     );
   }
 }
