@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/DetayliListView/main1.dart';
+import 'package:flutter_begin/DetayliGridView/main2.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const main1(),
+      home: const main2(),
     );
   }
 }
