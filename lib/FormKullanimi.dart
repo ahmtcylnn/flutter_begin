@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class formKullanimi extends StatelessWidget {
   formKullanimi({super.key});
 
@@ -48,7 +49,7 @@ class formKullanimi extends StatelessWidget {
                     },
                   ),
                   ElevatedButton(
-                    child: Text("Giriş"),
+                    child: const Text("Giriş"),
                     onPressed: () {
                       bool kontrolSonucu = formKey.currentState!.validate();
                       if (kontrolSonucu) {

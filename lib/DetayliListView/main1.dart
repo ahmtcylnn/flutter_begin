@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_begin/DetayliListView/FoodDetails.dart';
 import 'package:flutter_begin/DetayliListView/Yemekler.dart';
 
 class main1 extends StatefulWidget {
@@ -20,11 +21,11 @@ class _main1State extends State<main1> {
     var y6 = Yemekler(6, "Baklava", "baklava.png", 75.99);
 
     yemekListesi.add(y1);
-    yemekListesi.add(y2);
-    yemekListesi.add(y3);
     yemekListesi.add(y4);
     yemekListesi.add(y5);
     yemekListesi.add(y6);
+    yemekListesi.add(y2);
+    yemekListesi.add(y3);
 
     return yemekListesi;
   }
@@ -47,27 +48,42 @@ class _main1State extends State<main1> {
                   var yemek = yemekListesi[index];
 
                   return Card(
-                    child: Row(
-                      children: [
-                        Image.asset("resimler/${yemek.yemek_resim_adi}"),
-                        Column(
-                          children: [
-                            Text(
-                              yemek.yemek_adi,
-                              style: const TextStyle(fontSize: 25),
-                            ),
-                            const SizedBox(
-                              height: 50,
-                            ),
-                            Text(
-                              "${yemek.yemek_fiyat} \u{20BA}",
-                              style: const TextStyle(fontSize: 25),
-                            )
-                          ],
-                        ),
-                        const Spacer(),
-                        const Icon(Icons.keyboard_arrow_right),
-                      ],
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) =>
+                                    foodDetailsPage(yemek))));
+                      },
+                      child: Row(
+                        children: [
+                          SizedBox(
+                              height: 150,
+                              width: 150,
+                              child: Image.asset(
+                                  "resimler/${yemek.yemek_resim_adi}")),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                yemek.yemek_adi,
+                                style: const TextStyle(fontSize: 25),
+                              ),
+                              const SizedBox(
+                                height: 50,
+                              ),
+                              Text(
+                                "${yemek.yemek_fiyat} \u{20BA}",
+                                style: const TextStyle(
+                                    fontSize: 20, color: Colors.blue),
+                              )
+                            ],
+                          ),
+                          const Spacer(),
+                          const Icon(Icons.keyboard_arrow_right),
+                        ],
+                      ),
                     ),
                   );
                 }));

@@ -9,6 +9,7 @@ class AppBarKullanimi extends StatelessWidget {
       appBar: AppBar(
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            // ignore: prefer_const_literals_to_create_immutables
             children: [
               const Text(
                 "Başlık",
@@ -43,21 +44,22 @@ class AppBarKullanimi extends StatelessWidget {
               },
             ),
             PopupMenuButton(
-              child: Icon(Icons.more_vert),
+              child: const Icon(Icons.more_vert),
               itemBuilder: (context) => [
-                PopupMenuItem(
-                  child: const Text(
+                const PopupMenuItem(
+                  // ignore: sort_child_properties_last
+                  child: Text(
                     "Sil",
                     style: TextStyle(color: Colors.red),
                   ),
                   value: 1,
                 ),
-                PopupMenuItem(
-                  child: const Text(
+                const PopupMenuItem(
+                  value: 2,
+                  child: Text(
                     "Güncelle",
                     style: TextStyle(color: Colors.blue),
                   ),
-                  value: 2,
                 )
               ],
               onSelected: (menuItemValue) {
@@ -73,7 +75,7 @@ class AppBarKullanimi extends StatelessWidget {
       body: Center(
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: [],
+        children: const [],
       )),
     );
   }
