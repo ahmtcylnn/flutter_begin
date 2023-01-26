@@ -57,6 +57,9 @@ class _main2State extends State<main2> {
                               builder: ((context) => filmDetay(film))));
                     },
                     child: Card(
+                      color: Colors.black,
+                      shadowColor: Colors.grey,
+                      elevation: 10,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
@@ -69,6 +72,23 @@ class _main2State extends State<main2> {
                             film.film_adi,
                             style: const TextStyle(
                                 fontSize: 16, fontWeight: FontWeight.bold),
+                          ),
+                          SizedBox(
+                            height: 25,
+                            child: TextButton(
+                                onPressed: (() {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: ((context) => filmDetay(film)),
+                                    ),
+                                  );
+                                }),
+                                child: const Text(
+                                  "Detay",
+                                  style: TextStyle(
+                                      color: Colors.white, fontSize: 11),
+                                )),
                           ),
                           Text(
                             "${film.film_fiyat} \u{20BA}",

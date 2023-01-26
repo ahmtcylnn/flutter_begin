@@ -31,7 +31,7 @@ class _cardKullanimiState extends State<cardKullanimi> {
                 borderRadius: BorderRadius.only(
                     bottomRight: Radius.circular(30),
                     topLeft: Radius.circular(30)),
-                side: BorderSide(width: 5, color: Colors.amberAccent),
+                side: BorderSide(width: 5, color: Colors.black),
               ),
               child: Center(
                   child: Column(
