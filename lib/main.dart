@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/BottomNavigationBar/main4.dart';
+import 'package:flutter_begin/BottomNavigationBar/DrawerKullanimi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         scaffoldBackgroundColor: Colors.grey,
       ),
-      home: const main4(),
+      home: const DrawerKullanimi(),
     );
   }
 }
