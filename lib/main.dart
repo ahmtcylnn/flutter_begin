@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/DetayliGridView/main2.dart';
+import 'package:flutter_begin/TabsKullanimi/main3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,9 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
-        scaffoldBackgroundColor: Colors.black,
+        scaffoldBackgroundColor: Colors.grey,
       ),
-      home: const main2(),
+      home: const main3(),
     );
   }
 }
