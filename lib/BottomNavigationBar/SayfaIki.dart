@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Sayfa1 extends StatefulWidget {
-  const Sayfa1({super.key});
+class SayfaIki extends StatefulWidget {
+  const SayfaIki({super.key});
 
   @override
-  State<Sayfa1> createState() => _Sayfa1State();
+  State<SayfaIki> createState() => _SayfaIkiState();
 }
 
-class _Sayfa1State extends State<Sayfa1> {
+class _SayfaIkiState extends State<SayfaIki> {
   @override
   Widget build(BuildContext context) {
     return const Center(
       child: Text(
-        "Sayfa Bir",
+        "Sayfa İki",
         style: TextStyle(color: Colors.black54, fontSize: 30),
       ),
     );
