@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_begin/BottomNavigationBar/DrawerKullanimi.dart';
+import 'package:flutter_begin/Shared_Pref_Kullanimi/shared_preKullanimi.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         scaffoldBackgroundColor: Colors.grey,
       ),
-      home: const DrawerKullanimi(),
+      home: const shared_preKullanimi(),
     );
   }
 }
